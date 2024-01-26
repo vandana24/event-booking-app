@@ -1,14 +1,14 @@
 # Event Booking App
 
-Welcome to the Event Booking React App! This application allows users to browse and book events seamlessly.Built with React, this app provides a modern and responsive user interface, making event booking a breeze.
+Welcome to the Event Booking App! This application allows users to browse and book events seamlessly.Built with React, this app provides a modern and responsive user interface, making event booking a breeze.
 
 
-## Follow these steps to run the Event Booking React App locally:
+## Follow these steps to run the Event Booking App locally:
 1. Clone this repository:
        git clone https://github.com/vandana24/event-booking-app.git
 
 2. Navigate to the project directory:
-       cd event-booking-react-app
+       cd event-booking-app
 
 3.  Install dependencies:
         npm install
