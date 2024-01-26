@@ -1,0 +1,99 @@
+.appointment-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointment-form-label {
+  color: #484848;
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 5px
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 350px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    color: #108f84;
+}
+
+select:focus {
+    border-color: #3498db;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.custom-arrow::before {
+    content: '\25BC';
+    font-size: 20px;
+    color: #666;
+    opacity: 0.5;
+}
+
+.appointment-form {
+    width: 350px;
+    padding: 20px;
+}
+
+.available-slots{
+    display: grid;
+    max-height: 238px;     
+    overflow-y: auto;
+    height: 100%;
+}
+
+.select-slot{
+    flex: 1;
+    margin: 10px 5px; 
+    padding: 10px; 
+    background: white;
+    border: 1.5px solid #108f84;
+    border-radius: 10px;
+    color: #108f84;
+}
+
+.select-slot:not(:last-child) {
+    margin-right: 5px;
+}
+
+.select-slot.selected {
+    background-color: #108f84; 
+    text-align: left;
+    color: #fff; /* White text color for better visibility */
+}
+
+.tick-mark {
+    vertical-align: bottom;
+    float: inline-end;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0px 3px;
+    color: #fff;
+}
+
+/* @media only screen and (max-width: 768px) {
+    .available-slots {
+       max-height: 238px; 
+       height: 100%;    
+    }
+} */

@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-booking-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.card-container {
+  max-width: 1000px; 
+  border-radius:19px;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-table !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-element {
+  flex: 1;
+  padding: 20px;
+}
+
+.card-element-h1{
+  font-size: 23px;
+  font-weight: bold;
+  padding: 20px 20px 0px 20px;
+}
+
+.timezone-heading{
+  font-weight: bold;
+}
+
+.timezone-label{
+  color: #696969;
+}
+
+.card-element-h2{
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+}
+
+.card-element:first-child {
+  background-color: rgb(244,244,244);
+  border-radius: 19px 0px 0px 19px;
+}
+
+.card-element:last-child {
+  background-color: #fff;
+  border-radius: 0px 19px 19px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-booking-container {
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .card-container {
+    height: 100%;
+  }
+  .card-element:first-child{
+    border-radius: 0px;
+  }
+  .loader {
+    right: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    display: flex !important;
   }
 }

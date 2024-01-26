@@ -1,0 +1,29 @@
+.loader {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    border: 5px solid #108f84;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .loader {
+    right: 50%;
+    top:70%;
+  }
+}
